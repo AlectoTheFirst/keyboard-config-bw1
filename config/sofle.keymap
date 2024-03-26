@@ -27,14 +27,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <36>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
