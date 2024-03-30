@@ -27,6 +27,43 @@
         };
     };
 
+    macros {
+        M0: M0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_press>, <&kp C_BRIGHTNESS_INC>;
+
+            label = "M0";
+        };
+
+        M01: M01 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_press>, <&kp C_BRI_DN>;
+
+            label = "M01";
+        };
+
+        M2: M2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&macro_press>,
+                <&kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS>;
+
+            label = "M2";
+        };
+
+        M3: M3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_press>, <&kp C_AC_SEARCH>;
+
+            label = "M3";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -113,6 +150,16 @@
 &none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &M0     &M01    &M2     &M3     &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
