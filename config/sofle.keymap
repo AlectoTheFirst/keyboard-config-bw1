@@ -70,22 +70,22 @@
 
         oe_test {
             bindings = <&kp DE_O_UMLAUT>;
-            key-positions = <36 24 21>;
+            key-positions = <36 21 52>;
         };
 
         ae_test {
             bindings = <&kp DE_A_UMLAUT>;
-            key-positions = <36 24 25>;
+            key-positions = <36 52 25>;
         };
 
         sztest {
             bindings = <&kp DE_SHARP_S>;
-            key-positions = <36 24 26>;
+            key-positions = <36 26 53>;
         };
 
         ue_test {
             bindings = <&kp DE_U_UMLAUT>;
-            key-positions = <36 24 19>;
+            key-positions = <36 19 53>;
         };
     };
 
