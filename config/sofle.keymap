@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "keys_de.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#include "keys_de.h"
 
 #define BASE 0
 #define LOWER 1
@@ -62,6 +62,30 @@
             bindings = <&none>, <&macro_press>, <&kp C_AC_SEARCH>;
 
             label = "M3";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        oe_test {
+            bindings = <&kp O>;
+            key-positions = <36 24 21>;
+        };
+
+        ae_test {
+            bindings = <&kp A>;
+            key-positions = <36 24 25>;
+        };
+
+        sztest {
+            bindings = <&kp S>;
+            key-positions = <36 24 26>;
+        };
+
+        ue_test {
+            bindings = <&kp U>;
+            key-positions = <36 24 19>;
         };
     };
 
