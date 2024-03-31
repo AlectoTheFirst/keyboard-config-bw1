@@ -69,22 +69,22 @@
         compatible = "zmk,combos";
 
         oe_test {
-            bindings = <&kp O>;
+            bindings = <&kp DE_O_UMLAUT>;
             key-positions = <36 24 21>;
         };
 
         ae_test {
-            bindings = <&kp A>;
+            bindings = <&kp DE_A_UMLAUT>;
             key-positions = <36 24 25>;
         };
 
         sztest {
-            bindings = <&kp S>;
+            bindings = <&kp DE_SHARP_S>;
             key-positions = <36 24 26>;
         };
 
         ue_test {
-            bindings = <&kp U>;
+            bindings = <&kp DE_U_UMLAUT>;
             key-positions = <36 24 19>;
         };
     };
