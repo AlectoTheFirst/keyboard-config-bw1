@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "keys_de.h"
+
 #include "keymap_german_mac_iso_zmk.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
